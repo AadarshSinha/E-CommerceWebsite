@@ -14,7 +14,7 @@ const Home = () => {
             </div>
             <div className="row justify-content-center py-3">
             <div className="buttons d-flex justify-content-center mb-5 pb-5">
-            <NavLink className="btn btn-outline-dark me-2" to="/products"><h1 className="display-4">Buy Now</h1></NavLink>
+            <NavLink className="btn btn-danger me-2" to="/products"><h1 className="display-4">Shop Now</h1></NavLink>
             </div>
             </div>
         </div>

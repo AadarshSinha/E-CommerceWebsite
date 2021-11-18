@@ -2,8 +2,8 @@ import './App.css';
 import Home from './Home';
 import Navbar from './Navbar'
 import {Switch,Route} from 'react-router-dom'
-import Products from './Products';
-import Product from './Product';
+import Products from './List';
+import Product from './Item';
 import Cart from './cart';
 
 function App() {

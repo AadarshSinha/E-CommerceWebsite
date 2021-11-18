@@ -37,11 +37,11 @@ const Products = () => {
         return(
             <> 
                <div className="buttons d-flex justify-content-center mb-5 pb-5">
-                   <button className="btn btn-outline-dark me-2 " onClick={()=>{setFilter(data)}}>ALL</button>
-                   <button className="btn btn-outline-dark me-2" onClick={()=>{setProduct("men's clothing")}}>MEN</button>
-                   <button className="btn btn-outline-dark me-2" onClick={()=>{setProduct("women's clothing")}}>WOMEN</button>
-                   <button className="btn btn-outline-dark me-2" onClick={()=>{setProduct("jewelery")}}>JEWELERY</button>
-                   <button className="btn btn-outline-dark me-2" onClick={()=>{setProduct("electronics")}}>ELECTRONICS</button>
+                   <button className="btn btn-outline-primary me-2 " onClick={()=>{setFilter(data)}}>ALL</button>
+                   <button className="btn btn-outline-primary me-2" onClick={()=>{setProduct("men's clothing")}}>MEN</button>
+                   <button className="btn btn-outline-primary me-2" onClick={()=>{setProduct("women's clothing")}}>WOMEN</button>
+                   <button className="btn btn-outline-primary me-2" onClick={()=>{setProduct("jewelery")}}>JEWELERY</button>
+                   <button className="btn btn-outline-primary me-2" onClick={()=>{setProduct("electronics")}}>ELECTRONICS</button>
                </div>
                {filter.map((product)=>{
                    return(
@@ -52,7 +52,7 @@ const Products = () => {
                                  <div class="card-body">
                                    <h5 class="card-title mb-0">{product.title.substring(0,12)}...</h5>
                                    <p class="card-text lead fw-bold">Rs {product.price}</p>
-                                   <NavLink to={`/products/${product.id}`} class="btn btn-outline-dark">Buy Now</NavLink>
+                                   <NavLink to={`/products/${product.id}`} class="btn btn-danger">Buy Now</NavLink>
                                  </div>
                             </div>
                        </div>
