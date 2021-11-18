@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './features/Home';
-import Navbar from './features/Navbar'
+import Home from './Home';
+import Navbar from './Navbar'
 import {Switch,Route} from 'react-router-dom'
-import Products from './features/Products';
-import Product from './features/Product';
-import Cart from './features/cart';
+import Products from './Products';
+import Product from './Product';
+import Cart from './cart';
 
 function App() {
   return (
