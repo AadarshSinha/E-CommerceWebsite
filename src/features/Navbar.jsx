@@ -20,15 +20,15 @@ const Navbar = () => {
                  <NavLink className="nav-link" to="/products">Products</NavLink>
                </li>
                <li className="nav-item">
-                 <NavLink className="nav-link" to="/about">About</NavLink>
+                 <s className="nav-link" href="#">About</s>
                </li>
                <li className="nav-item">
-                  <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                  <s className="nav-link" href="#">Contact</s>
                </li> 
             </ul>
             <div className="buttons">
-              <NavLink to="/login" className="btn btn-outline-dark"><i className="fa fa-sign-in me-1"></i>Login</NavLink>
-              <NavLink to="/register" className="btn btn-outline-dark ms-2"><i className="fa fa-user-plus me-1"></i>Register</NavLink>
+              <a href="#" className="btn btn-outline-dark"><i className="fa fa-sign-in me-1"></i>Login</a>
+              <a href="#" className="btn btn-outline-dark ms-2"><i className="fa fa-user-plus me-1"></i>Register</a>
               <NavLink to="/cart" className="btn btn-outline-dark ms-2"><i className="fa fa-shopping-cart me-1"></i>Cart({ state.length })</NavLink>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Products from "./Products";
 const Home = () => {
     return(
@@ -12,7 +13,11 @@ const Home = () => {
                   </div>
               </div>
             </div>
-            <Products/>
+            <div className="row justify-content-center py-3">
+            <div className="buttons d-flex justify-content-center mb-5 pb-5">
+            <NavLink className="btn btn-outline-dark me-2" to="/products"><h1 className="display-4">Buy Now</h1></NavLink>
+            </div>
+            </div>
         </div>
     )
 }
