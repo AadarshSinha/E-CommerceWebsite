@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Products from "./Products";
 const Home = () => {
     return(
         <div className="hero">

@@ -1,9 +1,8 @@
 import React,{useState,useEffect} from "react";
 import { useDispatch} from "react-redux";
-import {addCart} from "../redux/action"
+import {addCart} from "./store"
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
-import Skeleton from "react-loading-skeleton"
 const Product = () => {
     const {id} = useParams()
     const [product,setProduct]=useState([])

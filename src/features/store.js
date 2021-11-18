@@ -1,3 +1,17 @@
+import { createStore } from "redux";
+import {combineReducers } from "redux";
+export const addCart = (product) => {
+    return{
+        type : "ADDITEM",
+        payload : product
+    }
+}
+export const delCart = (product) => {
+    return{
+        type : "DELITEM",
+        payload : product
+    }
+}
 const cart=[]
 const handleCart = (state = cart,action) => {
     const product = action.payload;
@@ -42,4 +56,8 @@ const handleCart = (state = cart,action) => {
             break;
     }
 }
-export default handleCart;
+const rootReducers=combineReducers({
+    handleCart,
+})
+const store =createStore(rootReducers)
+export default store;
