@@ -30,6 +30,9 @@
       "react-app/jest"
     ]
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
